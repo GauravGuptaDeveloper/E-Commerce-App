@@ -3,3 +3,13 @@
     margin: 20px;
     height: 100vh;
 } */
+
+.loader {
+    background-image: url(../assets/gif/loader2.gif);
+    position: absolute;
+    top: 40%;
+    left: 43%;
+    height: 150px;
+    width: 150px;
+    z-index: -1;
+}

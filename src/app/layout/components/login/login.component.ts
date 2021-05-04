@@ -47,7 +47,7 @@ export class LoginComponent implements OnInit {
         this.loginForm.enable();
         this.loginService.setLogInSessionStorage();
         this.loginForm.reset();
-        this.router.navigate(['home']);
+        this.router.navigate(['product']);
       }else{
         alert("Wrong Email or Password");
         this.loginForm.reset();

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
-import { Router } from '@angular/router';
+import { CanDeactivate, Router } from '@angular/router';
 import { of } from 'rxjs';
 import { delay } from 'rxjs/operators';
 import { CartService } from 'src/app/core/services/cart.service';
@@ -14,6 +14,7 @@ export class CheckOutComponent implements OnInit {
 
   totalCost: number;
   isSpinning: boolean = false;
+  isPaymentDone: boolean = false;
 
   checkoutForm = this.fb.group({
     name: ['', Validators.required],
@@ -50,15 +51,27 @@ export class CheckOutComponent implements OnInit {
   checkoutFormSubmit(){
     this.isSpinning = true;
     this.checkoutForm.disable();
-    // fromEvent use cases....
     of(null).pipe(delay(2000)).subscribe(()=>{
 
     }, ()=>{}, ()=>{
-      this.cartService.removeAllItems();
-      this.isSpinning = false;
-      this.checkoutForm.enable();
-      this.router.navigate(['payment']);
+      if(this.totalCost==0){
+        alert("Price is Rs. 0");
+        this.router.navigate(['product'])
+      }else{
+        this.cartService.removeAllItems();
+        this.isSpinning = false;
+        this.checkoutForm.enable();
+        this.isPaymentDone = true;
+        this.router.navigate(['payment']);
+      }
     })
   }
 
+  canDeactivate(){    
+    if(!this.isPaymentDone){
+      return confirm("Do you want to want to cancel the payment?")
+    }else{
+      return true;
+    }
+  }
 }

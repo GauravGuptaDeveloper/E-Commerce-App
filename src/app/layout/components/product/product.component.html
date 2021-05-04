@@ -4,8 +4,10 @@
             <img class="card-img-top" [src]="product.filename" style="height: 300px;" alt="Card image cap">
         </div>
         <div class="card-body">
-            <h2 class="card-title" style="font-size: 14px; line-height: 1.5;">{{product.title | titlecase}}</h2>
-            <ul class="navbar-nav mr-auto">
+            <h2 class="card-title" style="font-size: 16px; font-weight: 500; line-height: 1.5;">{{product.title | titlecase}} |
+                <span style="font-size: 14px;">({{product.type | titlecase}})</span>
+            </h2>
+            <ul class="navbar-nav mr-auto" style="font-size: 15px; font-weight: 400;">
                 <li class="nav-item">
                     Rs. {{product.price}}
                 </li>

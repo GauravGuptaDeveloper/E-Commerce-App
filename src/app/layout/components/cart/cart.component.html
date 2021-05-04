@@ -1,4 +1,4 @@
-<div class="container-fluid" style="margin: 10px;">
+<div class="container-fluid" style="margin-top: 50px;">
     <h1>Shopping Cart</h1>
     <hr>
 
@@ -19,7 +19,7 @@
             <div class="card">
                 <div class="card-body">
                     <p class="card-text" style="font-size: 20px;">Subtotal ({{ getLengthOfCart() }} Items):
-                        <span style="font-weight: 500;">{{getTotalCost()}}</span>
+                        <span style="font-weight: 500;">Rs. {{getTotalCost()}}</span>
                     </p>
                     <button [disabled]="getLengthOfCart()<=0" mat-raised-button class="buy-btn" color="accent" (click)="redirectToPaymentPage()">
                         Proceed To Buy
@@ -32,7 +32,7 @@
     <br>
     <div>
         <p class="card-text" style="font-size: 20px; margin-left: 44em;">Subtotal ({{ getLengthOfCart() }} Items):
-            <span style="font-weight: 500;">{{getTotalCost()}}</span>
+            <span style="font-weight: 500;">Rs. {{getTotalCost()}}</span>
         </p>
     </div>
 </div>

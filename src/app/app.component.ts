@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Cart } from './core/models/cart';
-import { Product } from './core/models/product';
+import { NavigationCancel, NavigationEnd, NavigationError, NavigationStart, Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -10,28 +9,17 @@ import { Product } from './core/models/product';
 export class AppComponent implements OnInit {
   title = 'e-commerce-app';
 
-  demoProductDeleteAtTheEnd: Product;
-  demoCartProductDeleteAtTheEnd: Cart;
-  
-  constructor(){
-    this.demoProductDeleteAtTheEnd = {
-      "id": "f_01",
-      "title": "Brown eggs",
-      "type": "food",
-      "description": "Raw organic brown eggs in a basket",
-      "filename": "0.jpg",
-      "price": 28.1
-    }
+  showLoadingIndicator: boolean = false;
 
-    this.demoCartProductDeleteAtTheEnd = {
-      "id": "f_01",
-      "title": "Brown eggs",
-      "type": "food",
-      "description": "Raw organic brown eggs in a basket",
-      "filename": "0.jpg",
-      "price": 28.1,
-      "quantity":4
-    }
+  constructor(private router: Router){
+    this.router.events.subscribe((routerEvent: any)=>{
+      if(routerEvent instanceof NavigationStart){
+        this.showLoadingIndicator = true;
+      }
+      if(routerEvent instanceof NavigationEnd || routerEvent instanceof NavigationCancel || routerEvent instanceof NavigationError){
+        this.showLoadingIndicator = false
+      }
+    })
   }
   
   ngOnInit(): void {
