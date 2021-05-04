@@ -15,6 +15,7 @@ import { PlaygroundComponent } from './components/playground/playground.componen
 import { AppRoutingModule } from '../app-routing.module';
 import { AboutComponent } from './components/about/about.component';
 import { FormsModule } from '@angular/forms';
+import { JumbotronComponent } from './components/jumbotron/jumbotron.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { FormsModule } from '@angular/forms';
     CategoryTreeComponent,
     CategoryMenuItemComponent,
     PlaygroundComponent,
-    AboutComponent
+    AboutComponent,
+    JumbotronComponent
   ],
   imports: [
     CommonModule,
@@ -45,7 +47,8 @@ import { FormsModule } from '@angular/forms';
     SpinnerComponent,
     CategoryTreeComponent,
     PlaygroundComponent,
-    AboutComponent
+    AboutComponent,
+    JumbotronComponent
   ]
 })
 export class SharedModule { }

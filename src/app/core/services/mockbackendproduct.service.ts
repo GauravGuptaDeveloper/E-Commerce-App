@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { Observable, of } from 'rxjs';
 import { Product } from '../models/product';
 
 @Injectable({
@@ -14,6 +15,9 @@ export class MockBackendProduct {
   }
 
   getProducts(classification: string, type: string){
+    if(classification==null){
+      throw new Error("Classification cannot be empty");
+    }
     return this.productReadOnlyHttp.get<Product[]>(this.PRODUCT_API_URL+classification+".json");
   }
 
