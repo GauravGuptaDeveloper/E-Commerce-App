@@ -1,0 +1,13 @@
+.container {
+    top: 50%;
+    width: 33em;
+    height: max-content;
+    margin-top: 50px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    margin-bottom: 50px;
+}
+
+.login-container {
+    height: max-content;
+}

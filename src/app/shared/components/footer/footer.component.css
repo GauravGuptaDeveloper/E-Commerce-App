@@ -1,0 +1,15 @@
+.page-footer {
+    background-color: black;
+    color: white;
+}
+
+.footer-item-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.footer-item {
+    margin-left: 10px;
+    margin-right: 10px;
+}

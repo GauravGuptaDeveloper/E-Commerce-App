@@ -1,0 +1,39 @@
+<div class="container-fluid" style="margin: 10px;">
+    <h1>Shopping Cart</h1>
+    <hr>
+
+    <div class="row">
+        <div class="col-9">
+            <div *ngFor="let cartItem of cartItems">
+                <app-cart-item [cart]="cartItem"></app-cart-item>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="card">
+                <div class="card-body">
+                    <p class="card-text center-text ads">100% Purchase Protection.</p>
+                    <p class="card-text center-text ads">Original Products. Secure Payment</p>
+                </div>
+            </div>
+            <hr>
+            <div class="card">
+                <div class="card-body">
+                    <p class="card-text" style="font-size: 20px;">Subtotal ({{ getLengthOfCart() }} Items):
+                        <span style="font-weight: 500;">{{getTotalCost()}}</span>
+                    </p>
+                    <button [disabled]="getLengthOfCart()<=0" mat-raised-button class="buy-btn" color="accent" (click)="redirectToPaymentPage()">
+                        Proceed To Buy
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <br>
+    <div>
+        <p class="card-text" style="font-size: 20px; margin-left: 44em;">Subtotal ({{ getLengthOfCart() }} Items):
+            <span style="font-weight: 500;">{{getTotalCost()}}</span>
+        </p>
+    </div>
+</div>
+<hr>

@@ -1,0 +1,16 @@
+<div class="container-fluid">
+    <div class="row" style="background-color: grey; color: white; text-align: center; padding-top: 6px;">
+        <div class="col-2" style="text-align: left;">
+            <div class="row">
+                <div class="col" *ngFor="let category of categories">
+                    <app-category-menu-item [category]="category"></app-category-menu-item>
+                </div>
+            </div>
+        </div>
+        <div class="col-10">
+            <div class="row">
+                <h4></h4>
+            </div>
+        </div>
+    </div>
+</div>

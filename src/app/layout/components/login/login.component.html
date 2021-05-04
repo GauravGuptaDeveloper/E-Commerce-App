@@ -1,0 +1,35 @@
+<div class="login-container">
+    <div class="mat-card container card">
+        <form [formGroup]="loginForm" (ngSubmit)="checkUserValidity()">
+            <div class="form-group">
+                <label for="inputEmail">Email address</label>
+                <input formControlName="email" type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="Enter email">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                <div *ngIf="email?.invalid && (email?.dirty || email?.touched)" class="alert alert-danger">
+                    <div *ngIf="email?.errors?.required">
+                        Email is required.
+                    </div>
+                    <div *ngIf="email?.errors?.email">
+                        Email is not valid.
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputPassword">Password</label>
+                <input formControlName="password" type="password" class="form-control" id="inputPassword" placeholder="Password">
+                <div *ngIf="password?.invalid && (password?.dirty || password?.touched)" class="alert alert-danger">
+                    <div *ngIf="password?.errors?.required">
+                        Password is required.
+                    </div>
+                    <div *ngIf="password?.errors?.minlength">
+                        Password should be minimum 8 characters.
+                    </div>
+                </div>
+            </div>
+            <button mat-raised-button class="buy-btn" [disabled]="!loginForm.valid" color="accent" style="margin-bottom: 10px;">
+                Continue
+            </button>
+            <app-spinner [isSpinning]="isSpinning"></app-spinner>
+        </form>
+    </div>
+</div>

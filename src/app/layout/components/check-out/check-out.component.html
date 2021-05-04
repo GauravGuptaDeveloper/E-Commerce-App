@@ -1,0 +1,59 @@
+<div class="login-container">
+    <div class="mat-card container card">
+        <form [formGroup]="checkoutForm" (ngSubmit)="checkoutFormSubmit()">
+            <div class="form-group">
+                <label for="inputEmail">Email address</label>
+                <input formControlName="email" type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="Enter email">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                <div *ngIf="email?.invalid && (email?.dirty || email?.touched)" class="alert alert-danger">
+                    <div *ngIf="email?.errors?.required">
+                        Email is required.
+                    </div>
+                    <div *ngIf="email?.errors?.email">
+                        Email is not valid.
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputName">Name</label>
+                <input formControlName="name" type="text" class="form-control" id="inputName" placeholder="Enter Name">
+                <div *ngIf="name?.invalid && (name?.dirty || name?.touched)" class="alert alert-danger">
+                    <div *ngIf="name?.errors?.required">
+                        Name is required.
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputShippingAddress">Shipping Address</label>
+                <input formControlName="shippingAddress" type="text" class="form-control" id="inputShippingAddress" placeholder="Enter Shipping Address">
+                <div *ngIf="shippingAddress?.invalid && (shippingAddress?.dirty || shippingAddress?.touched)" class="alert alert-danger">
+                    <div *ngIf="shippingAddress?.errors?.required">
+                        Shipping Address is required.
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputPhoneNumber">Phone Number</label>
+                <input formControlName="phoneNumber" type="text" class="form-control" id="inputPhoneNumber" placeholder="Enter Phone Number">
+                <div *ngIf="phoneNumber?.invalid && (phoneNumber?.dirty || phoneNumber?.touched)" class="alert alert-danger">
+                    <div *ngIf="phoneNumber?.errors?.required">
+                        Phone Number is required.
+                    </div>
+                    <div *ngIf="phoneNumber?.errors?.minlength ">
+                        Phone should be 10 digits.
+                    </div>
+                    <div *ngIf="phoneNumber?.errors?.maxlength ">
+                        Phone should be 10 digits.
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h2 style="text-align: center;">Total Payment: {{totalCost}}</h2>
+            </div>
+            <button mat-raised-button class="buy-btn" color="accent" style="width: 100%; font-size: 18px;" [disabled]="!checkoutForm.valid">
+                Order
+            </button>
+            <app-spinner [isSpinning]="isSpinning"></app-spinner>
+        </form>
+    </div>
+</div>

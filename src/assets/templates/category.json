@@ -1,0 +1,17 @@
+[{
+        "classification": "food",
+        "type": [
+            "vegetable",
+            "fruit",
+            "dairy"
+        ]
+    },
+    {
+        "classification": "gadgets",
+        "type": [
+            "mobile",
+            "computer",
+            "laptop"
+        ]
+    }
+]

@@ -1,0 +1,16 @@
+.row {
+    margin: 0;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.ads {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.buy-btn {
+    width: 20rem;
+}

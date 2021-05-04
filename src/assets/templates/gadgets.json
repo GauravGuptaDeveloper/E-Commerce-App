@@ -1,0 +1,121 @@
+[{
+    "id": "g_01",
+    "title": "IPhone 12",
+    "classification": "gadgets",
+    "type": "mobile",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum ratione necessitatibus natus et ab, consectetur at quidem earum? Quam, placeat.",
+    "filename": "0.jpg",
+    "price": 79999
+}, {
+    "id": "g_02",
+    "title": "Mi Notebook Horizon Edition 14 Intel Core",
+    "classification": "gadgets",
+    "type": "laptop",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, excepturi?",
+    "filename": "1.jpg",
+    "price": 49999
+}, {
+    "id": "g_03",
+    "classification": "gadgets",
+    "title": "Redmi Note 10",
+    "type": "mobile",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit nulla eius libero cum a!",
+    "filename": "2.jpg",
+    "price": 15000
+}, {
+    "id": "g_04",
+    "classification": "gadgets",
+    "title": "HP 14 Ultra Thin & Light 14",
+    "type": "laptop",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos iure eligendi quos quod itaque rerum nobis delectus earum? Pariatur sit, consequuntur molestiae officiis sequi eveniet sunt expedita quos? Dignissimos, saepe!",
+    "filename": "3.jpg",
+    "price": 35990
+}, {
+    "title": "One Plus 8T",
+    "type": "mobile",
+    "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex, similique!",
+    "filename": "4.jpg",
+    "price": 17.11,
+    "id": "g_05",
+    "classification": "gadgets"
+}, {
+    "title": "Acer Nitro 5 Intel Core i5-10th Gen 15.6-inch",
+    "type": "laptop",
+    "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum, optio ipsum temporibus deleniti cupiditate laudantium, sapiente saepe iure veniam quo, corporis repudiandae mollitia dolores error possimus blanditiis officia reprehenderit! Voluptas labore facere debitis itaque corrupti a. Assumenda, pariatur voluptates! Laudantium deserunt pariatur natus! Iste, alias!",
+    "filename": "5.jpg",
+    "price": 11.14,
+    "id": "g_06",
+    "classification": "gadgets"
+}, {
+    "title": "Oppo A31",
+    "type": "mobile",
+    "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio, illo architecto. Obcaecati molestiae quaerat voluptates natus quos quia nulla, pariatur magnam quae harum illo.",
+    "filename": "7.jpg",
+    "price": 27000,
+    "id": "g_08",
+    "classification": "gadgets"
+}, {
+    "title": "Logitech B170 Wireless Mouse",
+    "type": "computer",
+    "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit ut omnis commodi nobis est ducimus?",
+    "filename": "8.jpg",
+    "price": 599,
+    "id": "g_09",
+    "classification": "gadgets"
+}, {
+    "title": "TP-Link Archer C6 Gigabit MU-MIMO Wireless Router,",
+    "type": "computer",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae delectus natus velit totam! Eligendi, quisquam modi. Tenetur nulla ullam placeat itaque illo corporis, perspiciatis ea iure, praesentium debitis magni et accusantium reiciendis aut laboriosam delectus! Aut sed libero fuga esse qui magnam iste, suscipit officiis placeat voluptas id enim harum quibusdam ratione accusantium vitae delectus cum dignissimos perspiciatis doloribus ab.",
+    "filename": "9.jpg",
+    "price": 2249,
+    "id": "g_10",
+    "classification": "gadgets"
+}, {
+    "title": "Wired Keyboard (Black)",
+    "type": "computer",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, commodi, voluptates eligendi velit in beatae, blanditiis illo veniam doloribus temporibus delectus ratione? Officiis, possimus quo. Harum sint maiores mollitia blanditiis eius id ipsam porro placeat, perferendis atque accusantium delectus possimus?",
+    "filename": "16.jpg",
+    "price": 599,
+    "id": "g_17",
+    "classification": "gadgets"
+}, {
+    "title": "BenQ GW2480T Monitor",
+    "type": "computer",
+    "description": "Lorem ipsum dolor sit amet consectetur.",
+    "filename": "17.jpg",
+    "price": 11990,
+    "id": "g_18",
+    "classification": "gadgets"
+}, {
+    "title": "Proffisy Laptop Stand",
+    "type": "computer",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error ullam et eaque at quaerat incidunt, modi corporis quibusdam similique, nostrum, perspiciatis officiis. Rem assumenda consectetur aperiam dolore itaque.",
+    "filename": "18.jpg",
+    "price": 1980,
+    "id": "g_19",
+    "classification": "gadgets"
+}, {
+    "title": "INNOWIN® Jazz High Back Mesh Office Chair",
+    "type": "computer",
+    "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto corporis iste modi in necessitatibus? Quidem repudiandae ea iusto aspernatur aperiam. Repellat nobis tempora ullam!",
+    "filename": "20.jpg",
+    "price": 8660,
+    "id": "g_21",
+    "classification": "gadgets"
+}, {
+    "title": "Oppo F19",
+    "type": "mobile",
+    "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem in tenetur magni fuga quo temporibus dignissimos maiores natus similique, doloremque laboriosam eaque itaque dolores, saepe quas, ipsa est adipisci illum.",
+    "filename": "21.jpg",
+    "price": 29999,
+    "id": "g_22",
+    "classification": "gadgets"
+}, {
+    "title": "Dell G3 3500 Gaming Laptop ",
+    "type": "laptop",
+    "description": "Lorem ipsum dolor sit amet consectetur.",
+    "filename": "22.jpg",
+    "price": 22.7,
+    "id": "g_23",
+    "classification": "gadgets"
+}]

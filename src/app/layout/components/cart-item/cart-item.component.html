@@ -1,0 +1,26 @@
+<div class="container">
+    <div class="row" style="margin: 10px;">
+        <div class="col-2">
+            <img class="card-img-top" [src]="cart.filename" alt="Card image cap">
+        </div>
+        <div class="col-10">
+            <div class="card" style="border: transparent;">
+                <div class="card-body">
+                    <h1 class="card-title">{{cart.title | titlecase}}</h1>
+                    <p class="card-text">{{cart.description}}</p>
+                    <div class="row">
+                        <div class="col-2">
+                            <a class="btn btn-danger" style="width: fit-content;" (click)="deleteTheItemFromCart()">Delete Item</a>
+                        </div>
+                        <div class="col">
+                            <select [(ngModel)]="selectedOption" (change)="updateCartItem(selectedOption)" class="form-control" id="exampleFormControlSelect1" style="width: 70px;">
+                                    <option *ngFor = "let i of cartItemOptionCount">{{i}}</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div style="text-align: end; font-size: 22px;">Price - Rs. {{ price }}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

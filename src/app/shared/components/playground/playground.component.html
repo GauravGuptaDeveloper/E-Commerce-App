@@ -1,0 +1,13 @@
+<!-- 1. NgIF -->
+<div style="padding: 10px;">
+
+    <button (click)="changeConditionForNgIf()">Click</button>
+
+    <div *ngIf="conditionForStringEmpty(); else anotherBlock">
+        <h1>I am in If {{data}}</h1>
+    </div>
+
+    <ng-template #anotherBlock>
+        <h3>I am in else {{data}}</h3>
+    </ng-template>
+</div>

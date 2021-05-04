@@ -1,0 +1,14 @@
+.product-detail-container {
+    padding: 0 2em 0px 4em;
+}
+
+.card {
+    height: 41em;
+    border: transparent;
+}
+
+.add-btn {
+    font-size: 18px;
+    height: 3rem;
+    width: 20rem;
+}
