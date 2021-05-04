@@ -1,4 +1,5 @@
-<div class="container-fluid" style="margin-top: 50px;">
+<app-jumbotron></app-jumbotron>
+<div class="container-fluid" style="margin-top: 30px;">
     <h1>Shopping Cart</h1>
     <hr>
 
@@ -18,7 +19,7 @@
             <hr>
             <div class="card">
                 <div class="card-body">
-                    <p class="card-text" style="font-size: 20px;">Subtotal ({{ getLengthOfCart() }} Items):
+                    <p class="card-text" style="font-size: 14px;">Subtotal ({{ getLengthOfCart() }} Items):
                         <span style="font-weight: 500;">Rs. {{getTotalCost()}}</span>
                     </p>
                     <button [disabled]="getLengthOfCart()<=0" mat-raised-button class="buy-btn" color="accent" (click)="redirectToPaymentPage()">
@@ -31,7 +32,7 @@
     <hr>
     <br>
     <div>
-        <p class="card-text" style="font-size: 20px; margin-left: 44em;">Subtotal ({{ getLengthOfCart() }} Items):
+        <p class="card-text" style="font-size: 16px; margin-left: 45em;">Subtotal ({{ getLengthOfCart() }} Items):
             <span style="font-weight: 500;">Rs. {{getTotalCost()}}</span>
         </p>
     </div>

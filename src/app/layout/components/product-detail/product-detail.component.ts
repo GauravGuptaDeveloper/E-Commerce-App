@@ -1,8 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, ActivatedRouteSnapshot, Params, Router } from '@angular/router';
+import { ToastrService } from 'ngx-toastr';
 import { Cart } from 'src/app/core/models/cart';
 import { Product } from 'src/app/core/models/product';
 import { CartService } from 'src/app/core/services/cart.service';
+import { NotificationService } from 'src/app/core/services/notification.service';
 import { ProductService } from 'src/app/core/services/product.service';
 
 @Component({
@@ -21,8 +23,7 @@ export class ProductDetailComponent implements OnInit {
   type: string = "";
 
   constructor(private productService: ProductService, private cartService: CartService, 
-    private router: Router, private route: ActivatedRoute) {
-      
+    private router: Router, private route: ActivatedRoute, private notificationService: NotificationService) {
       this.route.params.subscribe(params => {
         this.classification = params['classification'];
         this.type = params['type']
@@ -43,6 +44,7 @@ export class ProductDetailComponent implements OnInit {
   addToCart(){
     let cart: Cart = {...this.product};
     this.cartService.addItemToCart(cart);
+    this.notificationService.showInfo('Product added successfully!', "Cart")
   }
 
 }

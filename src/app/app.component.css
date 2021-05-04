@@ -11,5 +11,5 @@
     left: 43%;
     height: 150px;
     width: 150px;
-    z-index: -1;
+    z-index: 1;
 }

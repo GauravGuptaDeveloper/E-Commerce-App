@@ -1,4 +1,6 @@
-<div class="login-container">
+<app-jumbotron></app-jumbotron>
+
+<div class="login-container" style="font-size: 15px;">
     <div class="mat-card container card">
         <form [formGroup]="checkoutForm" (ngSubmit)="checkoutFormSubmit()">
             <div class="form-group">
@@ -48,7 +50,7 @@
                 </div>
             </div>
             <div>
-                <h2 style="text-align: center;">Total Payment: Rs. {{totalCost}}</h2>
+                <h3 style="text-align: center; font-weight: 600;">Total Payment: Rs. {{totalCost}}</h3>
             </div>
             <button mat-raised-button class="buy-btn" color="accent" style="width: 100%; font-size: 18px;" [disabled]="!checkoutForm.valid">
                 Order

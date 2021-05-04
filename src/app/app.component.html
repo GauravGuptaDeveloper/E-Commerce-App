@@ -1,10 +1,12 @@
 <div class="main-container">
     <app-header></app-header>
     <app-category-tree></app-category-tree>
-    <app-jumbotron></app-jumbotron>
-    <div class="loader" *ngIf="showLoadingIndicator">
-    </div>
-    <div class="container" style="height: 30em;" *ngIf="showLoadingIndicator"></div>
+    <!-- <app-jumbotron></app-jumbotron> -->
+    <!-- <div class="loader" *ngIf="true">
+    </div> -->
+    <!-- <div class="container" style="height: 30em;" *ngIf="showLoadingIndicator"></div> -->
     <router-outlet></router-outlet>
+    <!-- <app-spinner [isSpinning]="true"></app-spinner> -->
     <app-footer></app-footer>
+
 </div>

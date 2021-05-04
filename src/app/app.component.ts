@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { NavigationCancel, NavigationEnd, NavigationError, NavigationStart, Router } from '@angular/router';
+import { ActivatedRoute, ActivatedRouteSnapshot, NavigationCancel, NavigationEnd, NavigationError, NavigationStart, Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -11,7 +11,7 @@ export class AppComponent implements OnInit {
 
   showLoadingIndicator: boolean = false;
 
-  constructor(private router: Router){
+  constructor(private router: Router, private route: ActivatedRoute){
     this.router.events.subscribe((routerEvent: any)=>{
       if(routerEvent instanceof NavigationStart){
         this.showLoadingIndicator = true;
@@ -19,11 +19,12 @@ export class AppComponent implements OnInit {
       if(routerEvent instanceof NavigationEnd || routerEvent instanceof NavigationCancel || routerEvent instanceof NavigationError){
         this.showLoadingIndicator = false
       }
-    })
+    });
+
+    
   }
   
   ngOnInit(): void {
-    
   }
 
 

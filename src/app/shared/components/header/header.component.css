@@ -2,7 +2,16 @@
     height: 5em;
 }
 
+.push-up {
+    margin-bottom: 10px;
+}
+
+.push-right {
+    margin-right: 10px;
+}
+
 .list-item {
-    font-size: 18px;
-    padding: 0px 29px;
+    font-weight: 500;
+    font-size: 14px;
+    padding: 0px 2px;
 }

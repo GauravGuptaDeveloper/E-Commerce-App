@@ -1,4 +1,5 @@
-<mat-grid-list cols="5" rowHeight="450px" style="margin-top: 30px; padding: 10px;">
+<app-jumbotron></app-jumbotron>
+<mat-grid-list cols="5" rowHeight="380px" style="margin-top: 10px;">
     <div *ngFor="let product of products | filter:searchText ">
         <mat-grid-tile>
             <app-product [product]="product"></app-product>
