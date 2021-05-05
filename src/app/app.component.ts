@@ -20,8 +20,6 @@ export class AppComponent implements OnInit {
         this.showLoadingIndicator = false
       }
     });
-
-    
   }
   
   ngOnInit(): void {

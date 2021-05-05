@@ -16,6 +16,8 @@ import { AppRoutingModule } from '../app-routing.module';
 import { AboutComponent } from './components/about/about.component';
 import { FormsModule } from '@angular/forms';
 import { JumbotronComponent } from './components/jumbotron/jumbotron.component';
+import { LangModule } from '../language/lang.module';
+import { LanguageComponent } from './components/language/language.component';
 
 @NgModule({
   declarations: [
@@ -29,14 +31,16 @@ import { JumbotronComponent } from './components/jumbotron/jumbotron.component';
     CategoryMenuItemComponent,
     PlaygroundComponent,
     AboutComponent,
-    JumbotronComponent
+    JumbotronComponent,
+    LanguageComponent
   ],
   imports: [
     CommonModule,
     MaterialModule,
     FontAwesomeModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    LangModule
   ],
   exports:[
     HeaderComponent,
@@ -48,7 +52,8 @@ import { JumbotronComponent } from './components/jumbotron/jumbotron.component';
     CategoryTreeComponent,
     PlaygroundComponent,
     AboutComponent,
-    JumbotronComponent
+    JumbotronComponent,
+    LanguageComponent
   ]
 })
 export class SharedModule { }

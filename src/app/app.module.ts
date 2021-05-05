@@ -14,6 +14,8 @@ import { CartService } from './core/services/cart.service';
 import { SearchService } from './core/services/search.service';
 import { TilecasePipe } from './pipes/tilecase.pipe';
 import { PaymentcancellationGuard } from './guards/paymentcancellation.guard';
+import { LangModule } from './language/lang.module';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,6 +31,7 @@ import { PaymentcancellationGuard } from './guards/paymentcancellation.guard';
     FormsModule,
     CoreModule,
     AppRoutingModule,
+    LangModule
   ],
   providers: [LoginService, CartService, SearchService, PaymentcancellationGuard],
   bootstrap: [AppComponent]
