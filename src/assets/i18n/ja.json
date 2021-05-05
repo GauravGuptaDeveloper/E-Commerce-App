@@ -1,0 +1,33 @@
+{
+    "JUMBOTRON": {
+        "CONTENT-1": {
+            "SUB-1": "私たちは品質に焦点を当て、顧客は",
+            "SUB-2": "神",
+            "SUB-3": "わたしたちのため。それらに奉仕することは私たちの責任です"
+        },
+        "CONTENT-2": {
+            "SUB-1": "この厳しい時期に、私たちはあなたが出てくることをお勧めしません。したがって、",
+            "SUB-2": "代金引換は今のところ受け入れられません。"
+        },
+        "CONTENT-3": "WebBuyで安全に、健康に"
+    },
+    "ABOUT": {
+        "TITLE": "私たちは何をしますか！",
+        "CONTENT": "Lorem ipsum dolor sit amet consectetur adipisicingelit。 Blanditiis illo libero Labore magnam veritatis veniam voluptate sint totam delectus error ad、molestias rem quis voluptatibus expedita tenetur explicabo dolore odit quaerat obcaecati、placeat、et saepe？ドロレス、兼perferendis natus nulla consequatur nemoassumenda debitis、voluptates Laboriosam maiores magni iure repellat ab fuga autem adipisci dolorlabore。 Libero tempore pariatur、sapiente quos tempora adipisci error maiores magni atque sint repellat soluta、doloribus、voluptatemeveniet velit quis delectus facere explicabo.Velit quisquam recusandae quis unde odio sapiente. "
+    },
+    "NOT-FOUND": {
+        "TITLE": "404お探しのページが見つかりませんでした",
+        "CONTENT": "申し訳ありませんが、エラーが発生しました。リクエストされたページが見つかりません。"
+    },
+    "PAYMENT": {
+        "TITLE": "支払いは成功しました",
+        "CONTENT": "購入を続ける"
+    },
+    "CART": {
+        "TITLE": "100％購入保護。",
+        "CONTENT": "オリジナル商品。安全なお支払い"
+    },
+    "PRODUCT-DETAIL": {
+        "TAX": "すべての税金を含みます。"
+    }
+}

@@ -12,6 +12,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from '../app-routing.module';
 import { SharedModule } from '../shared/shared.module';
 import { Ng2SearchPipeModule } from 'ng2-search-filter';
+import { LangModule } from '../language/lang.module';
 @NgModule({
   declarations: [
     ProductsGridComponent,
@@ -29,7 +30,8 @@ import { Ng2SearchPipeModule } from 'ng2-search-filter';
     ReactiveFormsModule,
     AppRoutingModule,
     SharedModule,
-    Ng2SearchPipeModule
+    Ng2SearchPipeModule,
+    LangModule
   ],
   exports:[
     ProductsGridComponent,

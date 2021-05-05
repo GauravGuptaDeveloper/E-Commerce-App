@@ -1,9 +1,33 @@
 {
-    "APP": {
-        "TITLE": "Namaste Gaurav",
-        "SELECT": "Bahsha Badle!"
+    "JUMBOTRON": {
+        "CONTENT-1": {
+            "SUB-1": "हम गुणवत्ता पर ध्यान केंद्रित करते हैं और",
+            "SUB-2": "ग्राहक हमारे लिए भगवान है",
+            "SUB-3": "हमारे लिए। उनकी सेवा करना हमारी जिम्मेदारी है"
+        },
+        "CONTENT-2": {
+            "SUB-1": "इस कठिन समय में, हम आपको बाहर आने का सुझाव नहीं देते हैं। इसलिए ",
+            "SUB-2": "कैश ऑन डिलीवरी अभी स्वीकार्य नहीं है।"
+        },
+        "CONTENT-3": "सुरक्षित रहें, WebBuy पर स्वस्थ रहें"
     },
     "ABOUT": {
-        "TITLE": "Hum kya karte hai!"
+        "TITLE": "हम क्या करते हैं",
+        "CONTENT": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis illo libero labore magnam veritatis veniam voluptate sint totam delectus error ad, molestias rem quis voluptatibus expedita tenetur explicabo dolore odit quaerat obcaecati, placeat,et saepe? Dolores, cum perferendis natus nulla consequatur nemo assumenda debitis, voluptates laboriosam maiores magni iure repellat ab fuga autem adipisci dolor labore. Libero tempore pariatur, sapiente quos tempora adipisci error maiores magni atque sint repellat soluta, doloribus, voluptatem eveniet velit quis delectus facere explicabo.Velit quisquam recusandae quis unde odio sapiente quia consectetur laboriosam fugit distinctio quo autem ullam consequuntur quod sint, perferendis ipsum nesciunt repudiandae. "
+    },
+    "NOT-FOUND": {
+        "TITLE": "404- पृष्ठ मुझे खेद है नहीं मिला",
+        "CONTENT": "क्षमा करें, एक त्रुटि हुई, अनुरोधित पृष्ठ नहीं मिला!"
+    },
+    "PAYMENT": {
+        "TITLE": "भुगतान सफल है",
+        "CONTENT": "खरीदारी जारी रखें"
+    },
+    "CART": {
+        "TITLE": "100% खरीद सुरक्षा।",
+        "CONTENT": "मूल उत्पाद। भुगतान सुरक्षित"
+    },
+    "PRODUCT-DETAIL": {
+        "TAX": "सभी करों को मिलाकर।"
     }
 }
