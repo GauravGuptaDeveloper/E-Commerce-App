@@ -8,10 +8,17 @@ import { Component, Input, OnInit } from '@angular/core';
 export class SpinnerComponent implements OnInit {
 
   @Input() isSpinning: boolean = false;
+  @Input() height: string = "fit-content";
 
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  getStyle(){
+    return {
+      "height": this.height
+    }
   }
 
 }
