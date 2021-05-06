@@ -12,6 +12,10 @@ import { Observable, of } from 'rxjs';
 export class ProductResolver implements Resolve<string> {
   resolve(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): Observable<string> {
     // default page for item. This can be adjusted.
-    return of("food");
+    if(route.params['classification']==undefined){
+      return of("food");
+    }else{
+      return of(route.params['classification'].toLowerCase());
+    }
   }
 }

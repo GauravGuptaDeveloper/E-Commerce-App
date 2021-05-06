@@ -32,6 +32,8 @@ export class ProductsGridComponent implements OnInit {
     this.route.data.subscribe((data)=>{
       this.classification = data.classification;
       this.getProductsFromService();
+    }, (err)=>{
+      console.log("Error");
     })
     
     this.route.params.subscribe(params => {
@@ -59,6 +61,8 @@ export class ProductsGridComponent implements OnInit {
   getProductsFromServiceWithThisType(){
     this.productService.getProductsOfThisType(this.classification, this.type).then((items)=>{
       this.products = items;
+    }).catch((err)=>{
+      console.log("Error");
     })
   }
 

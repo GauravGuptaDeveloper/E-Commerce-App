@@ -11,7 +11,6 @@ export class LanguageComponent implements OnInit {
   constructor(public translate: TranslateService) { 
     translate.addLangs(['en', 'hi', 'ja']);
     translate.setDefaultLang('en');
-    console.log(translate.getBrowserLang(), translate.getLangs());
     
     const browserLang = translate.getBrowserLang();
     translate.use(browserLang.match(/en|hi|ja/)? browserLang:'en');

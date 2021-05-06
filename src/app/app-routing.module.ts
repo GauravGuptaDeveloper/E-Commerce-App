@@ -22,6 +22,7 @@ const routes: Routes = [
   }},
 
   {path: 'product/:classification', component: ProductsGridComponent, resolve: {
+    "classification": ProductResolver,
     "resolve": RoutedelayResolver
   }},
 
