@@ -26,15 +26,13 @@ export class MockBackendProduct {
     return new Promise((resolve, error)=>{
       this.productReadOnlyHttp.get<Product[]>(this.PRODUCT_API_URL+classification+".json").subscribe((foodItem)=>{
         foodItem.forEach(item => {
-          console.log("ITEM", item, classification);
-          
           if(item.id==id){
             product = item;
           }
         });
         resolve(product);
       }, (err)=>{
-        console.log("Error in Food Service at line 28", err);
+        console.log("Error in Food Service at line 35", err);
         error(err);
       });
     })
@@ -49,10 +47,9 @@ export class MockBackendProduct {
             products.push(item);
           }
         });
-        console.log("Product", products);
         resolve(products);
       }, (err)=>{
-        console.log("Error in Food Service at line 58", err);
+        console.log("Error in Food Service at line 52", err);
         error(err);
       });
     })
