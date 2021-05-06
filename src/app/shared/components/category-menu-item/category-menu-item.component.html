@@ -1,5 +1,5 @@
 <div class="container">
-    <button [matMenuTriggerFor]="menu" mat-button (click)="showThisClassification()" style="padding: 0; margin: 0; line-height: 1.7; font-size: 14px;">{{ category.classification | titlecase }}</button>
+    <button [matMenuTriggerFor]="menu" mat-button (click)="showThisClassification()" class="adjust-btn">{{ category.classification | titlecase }}</button>
     <mat-menu #menu="matMenu">
         <div *ngFor="let type of category.type">
             <button (click)="showTheseTypes(type)" mat-menu-item>{{ type | titlecase }}</button>

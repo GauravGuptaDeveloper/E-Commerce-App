@@ -6,7 +6,7 @@ import { CategoryService } from 'src/app/core/services/category.service';
 @Component({
   selector: 'app-category-tree',
   templateUrl: './category-tree.component.html',
-  styleUrls: ['./category-tree.component.css']
+  styleUrls: ['./category-tree.component.scss']
 })
 export class CategoryTreeComponent implements OnInit {
 
@@ -22,8 +22,6 @@ export class CategoryTreeComponent implements OnInit {
 
   getCategories(){
     this.categoryService.getCategories().subscribe((categories)=>{
-      console.log(categories);
-      
       this.categories = categories;
     })
   }
