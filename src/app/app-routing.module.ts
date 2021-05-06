@@ -15,21 +15,21 @@ import { PaymentComponent } from './shared/components/payment/payment.component'
 
 const routes: Routes = [
   {path: 'login', component: LoginComponent},
-
-  {path: 'product', component: ProductsGridComponent, resolve: {
-    "classification": ProductResolver,
-    "resolve": RoutedelayResolver
-  }},
-
-  {path: 'product/:classification', component: ProductsGridComponent, resolve: {
-    "classification": ProductResolver,
-    "resolve": RoutedelayResolver
-  }},
-
-  {path: 'product-detail/:classification/:type/:id', component: ProductDetailComponent, resolve: {
+  
+  {path: 'product', component: ProductsGridComponent, runGuardsAndResolvers: 'paramsOrQueryParamsChange' ,resolve: {
+    "products": ProductResolver,
     "resolve": RoutedelayResolver
   }},
   
+  {path: 'product/:classification', component: ProductsGridComponent, runGuardsAndResolvers: 'paramsOrQueryParamsChange', resolve: {
+    "products": ProductResolver,
+    "resolve": RoutedelayResolver
+  }},
+  
+  {path: 'product-detail/:classification/:type/:id', component: ProductDetailComponent, resolve: {
+    "resolve": RoutedelayResolver
+  }},
+
   { path: 'cart', component: CartComponent, canActivate: [AuthGuard], resolve: {
     "resolve": RoutedelayResolver
   }},

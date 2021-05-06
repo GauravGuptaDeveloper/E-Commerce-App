@@ -1,8 +1,6 @@
 import { HttpClientTestingModule } from '@angular/common/http/testing';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
-import { Subject } from 'rxjs';
-import { Cart } from 'src/app/core/models/cart';
 import { CartService } from 'src/app/core/services/cart.service';
 import { CartMockService } from 'src/app/core/services/mock-testing-cart.service';
 import { LangModule } from 'src/app/language/lang.module';

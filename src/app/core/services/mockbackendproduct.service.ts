@@ -15,11 +15,6 @@ export class MockBackendProduct {
   }
 
   getProducts(classification: string, type: string){
-    if(classification==undefined){
-      return new Observable<Product[]>((observer)=>{
-        observer.error("Classification cannot be empty | But be default we are providing `Food`");
-      });
-    }
     return this.productReadOnlyHttp.get<Product[]>(this.PRODUCT_API_URL+classification+".json");
   }
 

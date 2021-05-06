@@ -4,18 +4,30 @@ import {
   RouterStateSnapshot,
   ActivatedRouteSnapshot
 } from '@angular/router';
-import { Observable, of } from 'rxjs';
+import { from, Observable, of } from 'rxjs';
+import { Product } from '../core/models/product';
+import { ProductService } from '../core/services/product.service';
 
 @Injectable({
   providedIn: 'root'
 })
-export class ProductResolver implements Resolve<string> {
-  resolve(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): Observable<string> {
-    // default page for item. This can be adjusted.
-    if(route.params['classification']==undefined){
-      return of("food");
-    }else{
-      return of(route.params['classification'].toLowerCase());
+export class ProductResolver implements Resolve<Product[]> {
+
+  defaultClassification: string = "food";
+
+  constructor(private productService: ProductService){
+    
+  }
+
+  resolve(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): Observable<Product[]> {
+    if(route.params['classification']!=undefined && route.queryParams['type']!=undefined){
+      return from(this.productService.getProductsOfThisType(route.params['classification'], route.queryParams['type']))
+    }
+    else if(route.params['classification']!=undefined && route.params['type']==undefined){
+      return this.productService.getProducts(route.params['classification'], "")
+    }
+    else{
+      return this.productService.getProducts(this.defaultClassification, "");
     }
   }
 }

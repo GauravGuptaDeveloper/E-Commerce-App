@@ -30,40 +30,9 @@ export class ProductsGridComponent implements OnInit {
     })
 
     this.route.data.subscribe((data)=>{
-      this.classification = data.classification;
-      this.getProductsFromService();
+      this.products = data.products;
     }, (err)=>{
       console.log("Error");
-    })
-    
-    this.route.params.subscribe(params => {
-      this.classification = params['classification'];
-      this.getProductsFromService();
-    }, ()=>{
-    });
-
-    this.route.queryParams.subscribe((query)=>{
-      this.type = query['type'];
-      this.getProductsFromService();
-    })
+    }) 
   }
-
-  getProductsFromService(){
-    if(this.classification && this.type){
-        this.getProductsFromServiceWithThisType();
-      }else{
-        this.productService.getProducts(this.classification, "").subscribe((items)=>{
-          this.products = items;
-        });
-      }
-  }
-
-  getProductsFromServiceWithThisType(){
-    this.productService.getProductsOfThisType(this.classification, this.type).then((items)=>{
-      this.products = items;
-    }).catch((err)=>{
-      console.log("Error");
-    })
-  }
-
 }
