@@ -29,10 +29,6 @@ const routes: Routes = [
   {path: 'product-detail/:classification/:type/:id', component: ProductDetailComponent, resolve: {
     "resolve": RoutedelayResolver
   }},
-
-  {path: 'search', component: ProductsGridComponent, resolve: {
-    "resolve": RoutedelayResolver
-  }},
   
   { path: 'cart', component: CartComponent, canActivate: [AuthGuard], resolve: {
     "resolve": RoutedelayResolver
