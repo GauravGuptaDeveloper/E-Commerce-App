@@ -13,7 +13,7 @@ export class CartComponent implements OnInit {
   cartItems: Cart[];
   cartSize: any ;  
 
-  constructor(private cartService: CartService, private router: Router, private _cdr: ChangeDetectorRef) {
+  constructor(private route: Router, private cartService: CartService, private router: Router, private _cdr: ChangeDetectorRef) {
     this.cartItems = [];
   }
   
@@ -36,7 +36,6 @@ export class CartComponent implements OnInit {
   }
 
   redirectToPaymentPage(){
-    console.log(this.cartService.getTotalCost());
     this.router.navigate(['check-out']);
   }
 }
