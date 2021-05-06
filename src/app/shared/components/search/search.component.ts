@@ -1,6 +1,5 @@
-import { AfterViewInit, Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { AfterViewInit, Component, OnInit } from '@angular/core';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
-import { fromEvent, Observable } from 'rxjs';
 import { SearchService } from 'src/app/core/services/search.service';
 
 @Component({
@@ -27,9 +26,4 @@ export class SearchComponent implements OnInit, AfterViewInit {
       this.searchService.typeSubject.next(keywords.target.value);
     })
   }
-
-  getInputBoxValue(){
-    // can be used later
-    // this.searchService.typeSubject.next(this.inputText);
-  }  
 }
