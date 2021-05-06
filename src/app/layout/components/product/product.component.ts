@@ -5,7 +5,7 @@ import { Product } from 'src/app/core/models/product';
 @Component({
   selector: 'app-product',
   templateUrl: './product.component.html',
-  styleUrls: ['./product.component.css']
+  styleUrls: ['./product.component.scss']
 })
 export class ProductComponent implements OnInit {
 
@@ -25,7 +25,6 @@ export class ProductComponent implements OnInit {
   }
 
   redirectToProductDetail(){
-    // relativeTo can be added so that it appends to previous route because right now router dont know in  which component it is
     this.router.navigate([`product-detail/${this.product.classification}/${this.product.type}/${this.product.id}`])
   }
 

@@ -7,7 +7,7 @@ import { SearchService } from 'src/app/core/services/search.service';
 @Component({
   selector: 'app-products-grid',
   templateUrl: './products-grid.component.html',
-  styleUrls: ['./products-grid.component.css']
+  styleUrls: ['./products-grid.component.scss']
 })
 export class ProductsGridComponent implements OnInit {
 
@@ -29,19 +29,6 @@ export class ProductsGridComponent implements OnInit {
       this.searchText = value;
     })
 
-    // console.log(this.route.snapshot.data['classification'], this.route.snapshot.params['classification'], this.route.snapshot.queryParams['type']);
-    
-    // this.classification = this.route.snapshot.params['classification']? 
-    //             this.route.snapshot.params['classification']:this.route.snapshot.data['classification'];
-    // this.type = this.route.snapshot.queryParams['type'];
-
-    // if(this.classification && this.type){
-    //   this.getProductsFromServiceWithThisType();
-    // }else{
-    //   this.getProductsFromService();
-    // }
-
-
     this.route.data.subscribe((data)=>{
       this.classification = data.classification;
       this.getProductsFromService();
@@ -55,7 +42,6 @@ export class ProductsGridComponent implements OnInit {
 
     this.route.queryParams.subscribe((query)=>{
       this.type = query['type'];
-      console.log("TYPE", this.type);
       this.getProductsFromService();
     })
   }

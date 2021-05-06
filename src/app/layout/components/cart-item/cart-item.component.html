@@ -13,12 +13,12 @@
                             <a class="btn btn-danger" style="width: fit-content;" (click)="deleteTheItemFromCart()">Delete Item</a>
                         </div>
                         <div class="col">
-                            <select [(ngModel)]="selectedOption" (change)="updateCartItem(selectedOption)" class="form-control" id="exampleFormControlSelect1" style="width: 70px;">
+                            <select [(ngModel)]="selectedOption" (change)="updateCartItem(selectedOption)" class="form-control" id="formSelect" style="width: 70px;">
                                     <option *ngFor = "let i of cartItemOptionCount">{{i}}</option>
                             </select>
                         </div>
                     </div>
-                    <div style="text-align: end; font-size: 18px;">Price - Rs. {{ price }}</div>
+                    <div class="price-txt">Price - Rs. {{ price }}</div>
                 </div>
             </div>
         </div>

@@ -1,5 +1,6 @@
 .product-detail-container {
     padding: 0 2em 0px 4em;
+    margin-top: 25px;
 }
 
 .card {
@@ -11,4 +12,15 @@
     font-size: 14px;
     height: 3rem;
     width: 20rem;
+}
+
+img {
+    height: 490px;
+    width: 415px;
+    margin-left: 80px;
+}
+
+.adjust-icon {
+    margin-right: 4px;
+    margin-bottom: 3px;
 }

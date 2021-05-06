@@ -1,13 +1,13 @@
-<div class="card zoom" style="width: 250px; height: fit-content;">
-    <a (click)="redirectToProductDetail()" style="cursor: pointer;">
+<div class="card zoom">
+    <a (click)="redirectToProductDetail()">
         <div style="padding: 5px;">
             <img class="card-img-top" [src]="product.filename" style="height: 230px;" alt="Card image cap">
         </div>
         <div class="card-body">
-            <h2 class="card-title" style="font-size: 14px; font-weight: 500; line-height: 1.5;">{{product.title | titlecase}} |
+            <h2 class="card-title adjust-tile">{{product.title | titlecase}} |
                 <span style="font-size: 14px;">({{product.type | titlecase}})</span>
             </h2>
-            <ul class="navbar-nav mr-auto" style="font-size: 15px; font-weight: 400;">
+            <ul class="navbar-nav mr-auto price-list">
                 <li class="nav-item">
                     Rs. {{product.price}}
                 </li>

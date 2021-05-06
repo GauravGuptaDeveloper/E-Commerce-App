@@ -1,7 +1,7 @@
-<div class="container-fluid product-detail-container" style="margin-top: 25px;">
+<div class="container-fluid product-detail-container">
     <div class="row justify-content-start">
         <div class="col-6">
-            <img class="card-img-top" [src]="product.filename" alt="Card image cap" style="height: 490px; width: 415px; margin-left: 80px;">
+            <img class="card-img-top" [src]="product.filename" alt="Card image cap">
         </div>
         <div class="col-6">
             <div class="card">
@@ -17,7 +17,7 @@
                     <p class="card-text" style="color: green; font-weight: 500;">{{'PRODUCT-DETAIL.TAX'|translate}}</p>
 
                     <button mat-raised-button class="add-btn" color="accent" (click)="addToCart()">
-                        <mat-icon style="margin-right: 4px; margin-bottom: 3px;">shopping_basket</mat-icon>
+                        <mat-icon class="adjust-icon">shopping_basket</mat-icon>
                         ADD TO BAG
                     </button>
                 </div>

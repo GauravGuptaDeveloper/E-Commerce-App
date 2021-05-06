@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, ActivatedRouteSnapshot, Params, Router } from '@angular/router';
-import { ToastrService } from 'ngx-toastr';
+import { ActivatedRoute, Router } from '@angular/router';
 import { Cart } from 'src/app/core/models/cart';
 import { Product } from 'src/app/core/models/product';
 import { CartService } from 'src/app/core/services/cart.service';
@@ -9,7 +8,7 @@ import { ProductService } from 'src/app/core/services/product.service';
 @Component({
   selector: 'app-product-detail',
   templateUrl: './product-detail.component.html',
-  styleUrls: ['./product-detail.component.css']
+  styleUrls: ['./product-detail.component.scss']
 })
 export class ProductDetailComponent implements OnInit {
 

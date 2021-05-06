@@ -8,7 +8,7 @@ import { CartService } from 'src/app/core/services/cart.service';
 @Component({
   selector: 'app-check-out',
   templateUrl: './check-out.component.html',
-  styleUrls: ['./check-out.component.css']
+  styleUrls: ['./check-out.component.scss']
 })
 export class CheckOutComponent implements OnInit {
 

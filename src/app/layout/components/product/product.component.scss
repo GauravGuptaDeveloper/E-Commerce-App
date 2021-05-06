@@ -1,0 +1,31 @@
+.navbar-nav {
+    display: flex;
+    flex-direction: row;
+    align-content: space-evenly;
+}
+
+.zoom {
+    padding: 10px;
+    transition: transform .3s;
+    width: 250px;
+    height: fit-content;
+}
+
+.zoom:hover {
+    transform: scale(1.1);
+}
+
+a {
+    cursor: pointer;
+}
+
+.adjust-tile {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.price-list {
+    font-size: 15px;
+    font-weight: 400;
+}
