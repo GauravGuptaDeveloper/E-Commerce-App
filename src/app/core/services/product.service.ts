@@ -11,6 +11,14 @@ export class ProductService {
   constructor(private mockBackendProduct: MockBackendProduct) {
   }
 
+  getSearchProducts(search: string): Promise<Product[]>{
+    return this.mockBackendProduct.searchProduct(search);
+  }
+
+  // getSearchProducts(search: string): Observable<Product[]>{
+  //   return this.mockBackendProduct.searchProduct(search);
+  // }
+
   getProducts(classification: string, type: string): Observable<Product[]>{
       return this.mockBackendProduct.getProducts(classification, type);      
   }

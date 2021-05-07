@@ -1,4 +1,5 @@
 import { AfterViewInit, Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
 import { SearchService } from 'src/app/core/services/search.service';
 
@@ -15,7 +16,7 @@ export class SearchComponent implements OnInit, AfterViewInit {
 
   inputText: string;
 
-  constructor(private searchService: SearchService) {
+  constructor(private searchService: SearchService, private route: Router) {
     this.inputText = "";
   }
 
@@ -25,5 +26,13 @@ export class SearchComponent implements OnInit, AfterViewInit {
     this.searchService.typeObservable.subscribe((keywords)=>{
       this.searchService.typeSubject.next(keywords.target.value);
     })
+  }
+
+  searchTheItem(){
+    let text = this.inputText;
+    this.inputText = "";
+    this.route.navigate(['product'], { queryParams:{
+      'search':text
+    }})
   }
 }

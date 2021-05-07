@@ -1,9 +1,17 @@
 <app-jumbotron></app-jumbotron>
-<mat-grid-list cols="5" rowHeight="380px" style="margin-top: 10px;">
-    <div *ngFor="let product of products | filter:searchText ">
-        <mat-grid-tile>
-            <app-product [product]="product"></app-product>
-        </mat-grid-tile>
-    </div>
-</mat-grid-list>
+<div *ngIf="products.length!=0; else showNoProductsMessage">
+    <mat-grid-list cols="5" rowHeight="380px" style="margin-top: 10px;">
+        <div *ngFor="let product of products">
+            <!-- <div *ngFor="let product of products | filter:searchText "> -->
+            <mat-grid-tile>
+                <app-product [product]="product"></app-product>
+            </mat-grid-tile>
+        </div>
+    </mat-grid-list>
+</div>
+
+<ng-template #showNoProductsMessage>
+    Products is not present
+</ng-template>
+
 <hr>

@@ -15,11 +15,7 @@ export class ProductsGridComponent implements OnInit {
 
   searchText: string;
 
-  // default classification is food
-  classification: string = "food";
-  type: string = "";
-
-  constructor(private productService: ProductService, private searchService: SearchService, private route: ActivatedRoute) {
+  constructor(private searchService: SearchService, private route: ActivatedRoute) {
     this.searchText = ""
   }
   
@@ -28,7 +24,6 @@ export class ProductsGridComponent implements OnInit {
     this.searchService.typeSubject.subscribe((value)=>{
       this.searchText = value;
     })
-
     this.route.data.subscribe((data)=>{
       this.products = data.products;
     }, (err)=>{
