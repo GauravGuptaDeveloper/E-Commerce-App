@@ -4,11 +4,16 @@
     align-content: space-evenly;
 }
 
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
 .zoom {
     padding: 10px;
     transition: transform .3s;
     width: 250px;
     height: fit-content;
+    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2);
 }
 
 .zoom:hover {
