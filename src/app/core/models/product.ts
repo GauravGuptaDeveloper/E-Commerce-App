@@ -6,4 +6,5 @@ export interface Product {
     description?: string;
     filename?: string;
     price?: number;
+    rating?: number;
 };

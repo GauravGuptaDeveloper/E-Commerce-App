@@ -1,259 +1,12 @@
 [{
-    "id": "f_01",
-    "title": "Brown eggs",
-    "classification": "food",
-    "type": "dairy",
-    "description": "Raw organic brown eggs in a basket",
-    "filename": "0.jpg",
-    "price": 28
-}, {
-    "id": "f_02",
-    "title": "Sweet fresh stawberry",
-    "classification": "food",
-    "type": "fruit",
-    "description": "Sweet fresh stawberry on the wooden table",
-    "filename": "1.jpg",
-    "price": 29
-}, {
-    "id": "f_03",
-    "classification": "food",
-    "title": "Asparagus",
-    "type": "vegetable",
-    "description": "Asparagus with ham on the wooden table",
-    "filename": "2.jpg",
-    "price": 18
-}, {
-    "id": "f_04",
-    "classification": "food",
-    "title": "Green smoothie",
-    "type": "dairy",
-    "description": "Glass of green smoothie with quail egg's yolk, served with cocktail tube, green apple and baby spinach leaves over tin surface.",
-    "filename": "3.jpg",
-    "price": 17
-}, {
-    "title": "Raw legums",
-    "type": "vegetable",
-    "description": "Raw legums on the wooden table",
-    "filename": "4.jpg",
-    "price": 17,
-    "id": "f_05",
-    "classification": "food"
-}, {
-    "title": "Baking cake",
-    "type": "dairy",
-    "description": "Baking cake in rural kitchen - dough  recipe ingredients (eggs, flour, sugar) on vintage wooden table from above.",
-    "filename": "5.jpg",
-    "price": 11,
-    "id": "f_06",
-    "classification": "food"
-}, {
-    "title": "Pesto with basil",
-    "type": "vegetable",
-    "description": "Italian traditional pesto with basil, chesse and oil",
-    "filename": "6.jpg",
-    "price": 18,
-    "id": "f_07",
-    "classification": "food"
-}, {
-    "title": "Hazelnut in black ceramic bowl",
-    "type": "vegetable",
-    "description": "Hazelnut in black ceramic bowl on old wooden background. forest wealth. rustic style. selective focus",
-    "filename": "7.jpg",
-    "price": 27,
-    "id": "f_08",
-    "classification": "food"
-}, {
-    "title": "Fresh stawberry",
-    "type": "fruit",
-    "description": "Sweet fresh stawberry on the wooden table",
-    "filename": "8.jpg",
-    "price": 28,
-    "id": "f_09",
-    "classification": "food"
-}, {
-    "title": "Lemon and salt",
-    "type": "fruit",
-    "description": "Rosemary, lemon and salt on the table",
-    "filename": "9.jpg",
-    "price": 15,
-    "id": "f_10",
-    "classification": "food"
-}, {
-    "title": "Homemade bread",
-    "type": "bakery",
-    "description": "Homemade bread",
-    "filename": "10.jpg",
-    "price": 17,
-    "id": "f_11",
-    "classification": "food"
-}, {
-    "title": "Legums",
-    "type": "vegetable",
-    "description": "Cooked legums on the wooden table",
-    "filename": "11.jpg",
-    "price": 14,
-    "id": "f_12",
-    "classification": "food"
-}, {
-    "title": "Fresh tomato",
-    "type": "vegetable",
-    "description": "Fresh tomato juice with basil",
-    "filename": "12.jpg",
-    "price": 16,
-    "id": "f_13",
-    "classification": "food"
-}, {
-    "title": "Healthy breakfast",
-    "type": "fruit",
-    "description": "Healthy breakfast set. rice cereal or porridge with berries and honey over rustic wood background",
-    "filename": "13.jpg",
-    "price": 13,
-    "id": "f_14",
-    "classification": "food"
-}, {
-    "title": "Green beans",
-    "type": "vegetable",
-    "description": "Raw organic green beans ready to eat",
-    "filename": "14.jpg",
-    "price": 28,
-    "id": "f_15",
-    "classification": "food"
-}, {
-    "title": "Baked stuffed portabello mushrooms",
-    "type": "bakery",
-    "description": "Homemade baked stuffed portabello mushrooms with spinach and cheese",
-    "filename": "15.jpg",
-    "price": 20,
-    "id": "f_16",
-    "classification": "food"
-}, {
-    "title": "Strawberry jelly",
-    "type": "fruit",
-    "description": "Homemade organic strawberry jelly in a jar",
-    "filename": "16.jpg",
-    "price": 14,
-    "id": "f_17",
-    "classification": "food"
-}, {
-    "title": "Pears juice",
-    "type": "fruit",
-    "description": "Fresh pears juice on the wooden table",
-    "filename": "17.jpg",
-    "price": 19,
-    "id": "f_18",
-    "classification": "food"
-}, {
-    "title": "Fresh pears",
-    "type": "fruit",
-    "description": "Sweet fresh pears on the wooden table",
-    "filename": "18.jpg",
-    "price": 15,
-    "id": "f_19",
-    "classification": "food"
-}, {
-    "title": "Caprese salad",
-    "type": "vegetable",
-    "description": "Homemade healthy caprese salad with tomato mozzarella and basil",
-    "filename": "19.jpg",
-    "price": 16,
-    "id": "f_20",
-    "classification": "food"
-}, {
-    "title": "Oranges",
-    "type": "fruit",
-    "description": "Orange popsicle ice cream bars made from fresh oranges.  a refreshing summer treat.",
-    "filename": "20.jpg",
-    "price": 21,
-    "id": "f_21",
-    "classification": "food"
-}, {
-    "title": "Vegan food",
-    "type": "vegetable",
-    "description": "Concept of vegan food",
-    "filename": "21.jpg",
-    "price": 29,
-    "id": "f_22",
-    "classification": "food"
-}, {
-    "title": "Breakfast with muesli",
-    "type": "dairy",
-    "description": "Concept of healthy breakfast with muesli",
-    "filename": "22.jpg",
-    "price": 22,
-    "id": "f_23",
-    "classification": "food"
-}, {
-    "title": "Honey",
-    "type": "bakery",
-    "description": "Honey and honeycell on the table",
-    "filename": "23.jpg",
-    "price": 17,
-    "id": "f_24",
-    "classification": "food"
-}, {
-    "title": "Breakfast with cottage",
-    "type": "fruit",
-    "description": "Healthy breakfast with cottage cheese and strawberry",
-    "filename": "24.jpg",
-    "price": 14,
-    "id": "f_25",
-    "classification": "food"
-}, {
-    "title": "Strawberry smoothie",
-    "type": "fruit",
-    "description": "Glass of red strawberry smoothie with chia seeds, served with retro cocktail tube, fresh mint and strawberries over dark background",
-    "filename": "25.jpg",
-    "price": 28,
-    "id": "f_26",
-    "classification": "food"
-}, {
-    "title": "Strawberry and mint",
-    "type": "fruit",
-    "description": "Homemade muesli with strawberry and mint",
-    "filename": "26.jpg",
-    "price": 26,
-    "id": "f_27",
-    "classification": "food"
-}, {
-    "title": "Ricotta",
-    "type": "dairy",
-    "description": "Ricotta with berry and mint",
-    "filename": "27.jpg",
-    "price": 27,
-    "id": "f_28",
-    "classification": "food"
-}, {
-    "title": "Cuban sandwiche",
-    "type": "bakery",
-    "description": "Homemade traditional cuban sandwiches with ham pork and cheese",
-    "filename": "28.jpg",
-    "price": 18,
-    "id": "f_29",
-    "classification": "food"
-}, {
-    "title": "Granola",
-    "type": "dairy",
-    "description": "Glass jar with homemade granola and yogurt with nuts, raspberries and blackberries on wooden cutting board over white textile in day light",
-    "filename": "29.jpg",
-    "price": 29,
-    "id": "f_30",
-    "classification": "food"
-}, {
-    "title": "Smoothie with chia seeds",
-    "type": "fruit",
-    "description": "Glass of red strawberry smoothie with chia seeds, served with retro cocktail tube, fresh mint and strawberries over wooden table",
-    "filename": "30.jpg",
-    "price": 25,
-    "id": "f_31",
-    "classification": "food"
-}, {
     "id": "g_01",
     "title": "IPhone 12",
     "classification": "gadgets",
     "type": "mobile",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum ratione necessitatibus natus et ab, consectetur at quidem earum? Quam, placeat.",
     "filename": "0.jpg",
-    "price": 79999
+    "price": 79999,
+    "rating": 5
 }, {
     "id": "g_02",
     "title": "Mi Notebook Horizon Edition 14 Intel Core",
@@ -261,7 +14,8 @@
     "type": "laptop",
     "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, excepturi?",
     "filename": "1.jpg",
-    "price": 49999
+    "price": 49999,
+    "rating": 4
 }, {
     "id": "g_03",
     "classification": "gadgets",
@@ -269,7 +23,8 @@
     "type": "mobile",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit nulla eius libero cum a!",
     "filename": "2.jpg",
-    "price": 15000
+    "price": 15000,
+    "rating": 4
 }, {
     "id": "g_04",
     "classification": "gadgets",
@@ -277,15 +32,17 @@
     "type": "laptop",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos iure eligendi quos quod itaque rerum nobis delectus earum? Pariatur sit, consequuntur molestiae officiis sequi eveniet sunt expedita quos? Dignissimos, saepe!",
     "filename": "3.jpg",
-    "price": 35990
+    "price": 35990,
+    "rating": 5
 }, {
     "title": "One Plus 8T",
     "type": "mobile",
     "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex, similique!",
     "filename": "4.jpg",
-    "price": 17.11,
+    "price": 39999,
     "id": "g_05",
-    "classification": "gadgets"
+    "classification": "gadgets",
+    "rating": 5
 }, {
     "title": "Acer Nitro 5 Intel Core i5-10th Gen 15.6-inch",
     "type": "laptop",
@@ -293,7 +50,8 @@
     "filename": "5.jpg",
     "price": 11.14,
     "id": "g_06",
-    "classification": "gadgets"
+    "classification": "gadgets",
+    "rating": 4
 }, {
     "title": "Oppo A31",
     "type": "mobile",
@@ -301,7 +59,8 @@
     "filename": "7.jpg",
     "price": 27000,
     "id": "g_08",
-    "classification": "gadgets"
+    "classification": "gadgets",
+    "rating": 3
 }, {
     "title": "Logitech B170 Wireless Mouse",
     "type": "computer",
@@ -309,7 +68,8 @@
     "filename": "8.jpg",
     "price": 599,
     "id": "g_09",
-    "classification": "gadgets"
+    "classification": "gadgets",
+    "rating": 4
 }, {
     "title": "TP-Link Archer C6 Gigabit MU-MIMO Wireless Router,",
     "type": "computer",
@@ -317,7 +77,8 @@
     "filename": "9.jpg",
     "price": 2249,
     "id": "g_10",
-    "classification": "gadgets"
+    "classification": "gadgets",
+    "rating": 5
 }, {
     "title": "Wired Keyboard (Black)",
     "type": "computer",
@@ -325,7 +86,8 @@
     "filename": "16.jpg",
     "price": 599,
     "id": "g_17",
-    "classification": "gadgets"
+    "classification": "gadgets",
+    "rating": 1
 }, {
     "title": "BenQ GW2480T Monitor",
     "type": "computer",
@@ -333,7 +95,8 @@
     "filename": "17.jpg",
     "price": 11990,
     "id": "g_18",
-    "classification": "gadgets"
+    "classification": "gadgets",
+    "rating": 3
 }, {
     "title": "Proffisy Laptop Stand",
     "type": "computer",
@@ -341,7 +104,8 @@
     "filename": "18.jpg",
     "price": 1980,
     "id": "g_19",
-    "classification": "gadgets"
+    "classification": "gadgets",
+    "rating": 2
 }, {
     "title": "INNOWIN® Jazz High Back Mesh Office Chair",
     "type": "computer",
@@ -349,7 +113,8 @@
     "filename": "20.jpg",
     "price": 8660,
     "id": "g_21",
-    "classification": "gadgets"
+    "classification": "gadgets",
+    "rating": 5
 }, {
     "title": "Oppo F19",
     "type": "mobile",
@@ -357,7 +122,8 @@
     "filename": "21.jpg",
     "price": 29999,
     "id": "g_22",
-    "classification": "gadgets"
+    "classification": "gadgets",
+    "rating": 1
 }, {
     "title": "Dell G3 3500 Gaming Laptop ",
     "type": "laptop",
@@ -365,5 +131,285 @@
     "filename": "22.jpg",
     "price": 22.7,
     "id": "g_23",
-    "classification": "gadgets"
+    "classification": "gadgets",
+    "rating": 5
+}, {
+    "id": "f_01",
+    "title": "Brown eggs",
+    "classification": "food",
+    "type": "dairy",
+    "description": "Raw organic brown eggs in a basket",
+    "filename": "0.jpg",
+    "price": 28,
+    "rating": 4
+}, {
+    "id": "f_02",
+    "title": "Sweet fresh stawberry",
+    "classification": "food",
+    "type": "fruit",
+    "description": "Sweet fresh stawberry on the wooden table",
+    "filename": "1.jpg",
+    "price": 29,
+    "rating": 4
+}, {
+    "id": "f_03",
+    "classification": "food",
+    "title": "Asparagus",
+    "type": "vegetable",
+    "description": "Asparagus with ham on the wooden table",
+    "filename": "2.jpg",
+    "price": 18,
+    "rating": 5
+}, {
+    "id": "f_04",
+    "classification": "food",
+    "title": "Green smoothie",
+    "type": "dairy",
+    "description": "Glass of green smoothie with quail egg's yolk, served with cocktail tube, green apple and baby spinach leaves over tin surface.",
+    "filename": "3.jpg",
+    "price": 17,
+    "rating": 2
+}, {
+    "title": "Raw legums",
+    "type": "vegetable",
+    "description": "Raw legums on the wooden table",
+    "filename": "4.jpg",
+    "price": 17,
+    "id": "f_05",
+    "classification": "food",
+    "rating": 3
+}, {
+    "title": "Baking cake",
+    "type": "dairy",
+    "description": "Baking cake in rural kitchen - dough  recipe ingredients (eggs, flour, sugar) on vintage wooden table from above.",
+    "filename": "5.jpg",
+    "price": 11,
+    "id": "f_06",
+    "classification": "food",
+    "rating": 3
+}, {
+    "title": "Pesto with basil",
+    "type": "vegetable",
+    "description": "Italian traditional pesto with basil, chesse and oil",
+    "filename": "6.jpg",
+    "price": 18,
+    "id": "f_07",
+    "classification": "food",
+    "rating": 4
+}, {
+    "title": "Hazelnut in black ceramic bowl",
+    "type": "vegetable",
+    "description": "Hazelnut in black ceramic bowl on old wooden background. forest wealth. rustic style. selective focus",
+    "filename": "7.jpg",
+    "price": 27,
+    "id": "f_08",
+    "classification": "food",
+    "rating": 4
+}, {
+    "title": "Fresh stawberry",
+    "type": "fruit",
+    "description": "Sweet fresh stawberry on the wooden table",
+    "filename": "8.jpg",
+    "price": 28,
+    "id": "f_09",
+    "classification": "food",
+    "rating": 5
+}, {
+    "title": "Lemon and salt",
+    "type": "fruit",
+    "description": "Rosemary, lemon and salt on the table",
+    "filename": "9.jpg",
+    "price": 15,
+    "id": "f_10",
+    "classification": "food",
+    "rating": 3
+}, {
+    "title": "Homemade bread",
+    "type": "bakery",
+    "description": "Homemade bread",
+    "filename": "10.jpg",
+    "price": 17,
+    "id": "f_11",
+    "classification": "food",
+    "rating": 4
+}, {
+    "title": "Legums",
+    "type": "vegetable",
+    "description": "Cooked legums on the wooden table",
+    "filename": "11.jpg",
+    "price": 14,
+    "id": "f_12",
+    "classification": "food",
+    "rating": 5
+}, {
+    "title": "Fresh tomato",
+    "type": "vegetable",
+    "description": "Fresh tomato juice with basil",
+    "filename": "12.jpg",
+    "price": 16,
+    "id": "f_13",
+    "classification": "food",
+    "rating": 3
+}, {
+    "title": "Healthy breakfast",
+    "type": "fruit",
+    "description": "Healthy breakfast set. rice cereal or porridge with berries and honey over rustic wood background",
+    "filename": "13.jpg",
+    "price": 13,
+    "id": "f_14",
+    "classification": "food",
+    "rating": 5
+}, {
+    "title": "Green beans",
+    "type": "vegetable",
+    "description": "Raw organic green beans ready to eat",
+    "filename": "14.jpg",
+    "price": 28,
+    "id": "f_15",
+    "classification": "food",
+    "rating": 5
+}, {
+    "title": "Baked stuffed portabello mushrooms",
+    "type": "bakery",
+    "description": "Homemade baked stuffed portabello mushrooms with spinach and cheese",
+    "filename": "15.jpg",
+    "price": 20,
+    "id": "f_16",
+    "classification": "food",
+    "rating": 4
+}, {
+    "title": "Strawberry jelly",
+    "type": "fruit",
+    "description": "Homemade organic strawberry jelly in a jar",
+    "filename": "16.jpg",
+    "price": 14,
+    "id": "f_17",
+    "classification": "food",
+    "rating": 1
+}, {
+    "title": "Pears juice",
+    "type": "fruit",
+    "description": "Fresh pears juice on the wooden table",
+    "filename": "17.jpg",
+    "price": 19,
+    "id": "f_18",
+    "classification": "food",
+    "rating": 4
+}, {
+    "title": "Fresh pears",
+    "type": "fruit",
+    "description": "Sweet fresh pears on the wooden table",
+    "filename": "18.jpg",
+    "price": 15,
+    "id": "f_19",
+    "classification": "food",
+    "rating": 5
+}, {
+    "title": "Caprese salad",
+    "type": "vegetable",
+    "description": "Homemade healthy caprese salad with tomato mozzarella and basil",
+    "filename": "19.jpg",
+    "price": 16,
+    "id": "f_20",
+    "classification": "food",
+    "rating": 4
+}, {
+    "title": "Oranges",
+    "type": "fruit",
+    "description": "Orange popsicle ice cream bars made from fresh oranges.  a refreshing summer treat.",
+    "filename": "20.jpg",
+    "price": 21,
+    "id": "f_21",
+    "classification": "food",
+    "rating": 4
+}, {
+    "title": "Vegan food",
+    "type": "vegetable",
+    "description": "Concept of vegan food",
+    "filename": "21.jpg",
+    "price": 29,
+    "id": "f_22",
+    "classification": "food",
+    "rating": 4
+}, {
+    "title": "Breakfast with muesli",
+    "type": "dairy",
+    "description": "Concept of healthy breakfast with muesli",
+    "filename": "22.jpg",
+    "price": 22,
+    "id": "f_23",
+    "classification": "food",
+    "rating": 5
+}, {
+    "title": "Honey",
+    "type": "bakery",
+    "description": "Honey and honeycell on the table",
+    "filename": "23.jpg",
+    "price": 17,
+    "id": "f_24",
+    "classification": "food",
+    "rating": 5
+}, {
+    "title": "Breakfast with cottage",
+    "type": "fruit",
+    "description": "Healthy breakfast with cottage cheese and strawberry",
+    "filename": "24.jpg",
+    "price": 14,
+    "id": "f_25",
+    "classification": "food",
+    "rating": 1
+}, {
+    "title": "Strawberry smoothie",
+    "type": "fruit",
+    "description": "Glass of red strawberry smoothie with chia seeds, served with retro cocktail tube, fresh mint and strawberries over dark background",
+    "filename": "25.jpg",
+    "price": 28,
+    "id": "f_26",
+    "classification": "food",
+    "rating": 2
+}, {
+    "title": "Strawberry and mint",
+    "type": "fruit",
+    "description": "Homemade muesli with strawberry and mint",
+    "filename": "26.jpg",
+    "price": 26,
+    "id": "f_27",
+    "classification": "food",
+    "rating": 5
+}, {
+    "title": "Ricotta",
+    "type": "dairy",
+    "description": "Ricotta with berry and mint",
+    "filename": "27.jpg",
+    "price": 27,
+    "id": "f_28",
+    "classification": "food",
+    "rating": 4
+}, {
+    "title": "Cuban sandwiche",
+    "type": "bakery",
+    "description": "Homemade traditional cuban sandwiches with ham pork and cheese",
+    "filename": "28.jpg",
+    "price": 18,
+    "id": "f_29",
+    "classification": "food",
+    "rating": 4
+}, {
+    "title": "Granola",
+    "type": "dairy",
+    "description": "Glass jar with homemade granola and yogurt with nuts, raspberries and blackberries on wooden cutting board over white textile in day light",
+    "filename": "29.jpg",
+    "price": 29,
+    "id": "f_30",
+    "classification": "food",
+    "rating": 5
+}, {
+    "title": "Smoothie with chia seeds",
+    "type": "fruit",
+    "description": "Glass of red strawberry smoothie with chia seeds, served with retro cocktail tube, fresh mint and strawberries over wooden table",
+    "filename": "30.jpg",
+    "price": 25,
+    "id": "f_31",
+    "classification": "food",
+    "rating": 4
 }]

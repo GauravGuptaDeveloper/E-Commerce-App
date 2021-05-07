@@ -28,4 +28,7 @@ export class ProductComponent implements OnInit {
     this.router.navigate([`product-detail/${this.product.classification}/${this.product.type}/${this.product.id}`])
   }
 
+  counter(){
+    return new Array(this.product.rating?this.product.rating:0);
+  }
 }

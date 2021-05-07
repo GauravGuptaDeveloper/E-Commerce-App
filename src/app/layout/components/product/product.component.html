@@ -12,6 +12,12 @@
                     Rs. {{product.price}}
                 </li>
             </ul>
+            <div class="adjust-stars">
+                <div *ngFor="let i of counter()">
+                    <mat-icon>star</mat-icon>
+                </div>
+            </div>
+
         </div>
     </a>
 </div>

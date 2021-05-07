@@ -7,4 +7,5 @@ export interface Cart {
     filename?: string;
     price?: number;
     quantity?: number;
+    rating?: number;
 };
