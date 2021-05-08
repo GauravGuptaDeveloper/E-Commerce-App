@@ -1,5 +1,16 @@
 .navbar {
     height: 5em;
+    background-color: #485461;
+    background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);
+}
+
+.txt-color,
+* {
+    color: white;
+}
+
+.white-icon {
+    color: white;
 }
 
 .push-up {

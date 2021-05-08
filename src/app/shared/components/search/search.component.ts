@@ -29,10 +29,12 @@ export class SearchComponent implements OnInit, AfterViewInit {
   }
 
   searchTheItem(){
-    let text = this.inputText;
-    this.inputText = "";
-    this.route.navigate(['product'], { queryParams:{
-      'search':text
-    }})
+    if(this.inputText!=""){
+      let text = this.inputText;
+      this.inputText = "";
+      this.route.navigate(['product'], { queryParams:{
+        'search':text
+      }})
+    }
   }
 }

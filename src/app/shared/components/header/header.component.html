@@ -1,32 +1,32 @@
 <div>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <img src="assets/images/webbuy_logo.webp" width="30" height="30" class="d-inline-block align-top push-up push-right" alt="">
+        <!-- <img src="assets/images/icon.jpg" style="background-color: black;" width="30" height="30" class="d-inline-block align-top push-up push-right" alt=""> -->
 
-        <a class="navbar-brand push-up" routerLink="/">Webbuy</a>
+        <a class="navbar-brand push-up" routerLink="/"><span class="txt-color">Webbuy</span></a>
 
         <div class="list-item" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item list-item">
-                    <a class="nav-link" [routerLink]="['product']" routerLinkActive="active current">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" [routerLink]="['product']" routerLinkActive="active current"><span class="txt-color">Home <span class="sr-only">(current)</span></span></a>
                 </li>
                 <li class="nav-item list-item">
-                    <a class="nav-link" routerLink="about" routerLinkActive="active current">About</a>
+                    <a class="nav-link" routerLink="about" routerLinkActive="active current"><span class="txt-color">About</span></a>
                 </li>
                 <li class="nav-item list-item">
                     <app-search></app-search>
                 </li>
                 <li class="nav-item list-item">
                     <div *ngIf="!isUserLoggedIn; else signOutBlock">
-                        <a class="nav-link" routerLink="login" routerLinkActive="active current">Login</a>
+                        <a class="nav-link" routerLink="login" routerLinkActive="active current"><span class="txt-color">Login</span></a>
                     </div>
                     <ng-template #signOutBlock>
-                        <a class="nav-link" style="cursor: pointer;" (click)="logOutSession() " routerLinkActive="active current ">Sign Out</a>
+                        <a class="nav-link" style="cursor: pointer;" (click)="logOutSession() " routerLinkActive="active current "> <span class="txt-color">Sign Out</span></a>
                     </ng-template>
                 </li>
                 <li class="nav-item list-item" style="margin-left: 16px">
                     <div class="row ">
                         <a class="nav-link " routerLink="cart" routerLinkActive="active current ">
-                            <mat-icon>shopping_cart</mat-icon>
+                            <mat-icon class="white-icon">shopping_cart</mat-icon>
                         </a>
                         <span>{{ cartItemCount }}</span>
                     </div>
