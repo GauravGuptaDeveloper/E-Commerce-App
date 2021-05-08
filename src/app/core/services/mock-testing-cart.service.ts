@@ -11,7 +11,7 @@ export class CartMockService{
       this.cartItems = [];
       this.cartItemsNotifier = new Subject();
       this.cartItems.push({
-        classification:"Test",
+        "classification":"Test",
         "description":"Test",
         "filename":"Test",
         "id":"1",
@@ -20,7 +20,7 @@ export class CartMockService{
         "title":"A Test",
         "type":"Mobile"
       }, {
-        classification:"Test B",
+        "classification":"Test B",
         "description":"Test B",
         "filename":"Test B",
         "id":"2",

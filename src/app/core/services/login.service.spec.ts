@@ -15,7 +15,7 @@ describe('LoginService', () => {
     
     userServiceStub = {
       getUsers(){
-        const user: User[] = [{email:'gaurav@gmail.com', 'password':'12345678'}];
+        const user: User[] = [{email:'test@gmail.com', 'password':'12345678'}];
         return of(user);
       }
     };
@@ -32,13 +32,13 @@ describe('LoginService', () => {
   });
 
   it('login successful', fakeAsync(()=>{
-    service.checkUserLoginCredentials({'email':'gaurav@gmail.com', 'password':'12345678'}).subscribe((response)=>{
+    service.checkUserLoginCredentials({'email':'test@gmail.com', 'password':'12345678'}).subscribe((response)=>{
       expect(response).toBeTruthy();
     });
   }))
 
   it('login not successful', fakeAsync(()=>{
-    service.checkUserLoginCredentials({'email':'gaurav@gmail.com', 'password':'1234678'}).subscribe((response)=>{
+    service.checkUserLoginCredentials({'email':'test@gmail.com', 'password':'1234678'}).subscribe((response)=>{
       expect(response).toBeFalsy();
     });
   }))
