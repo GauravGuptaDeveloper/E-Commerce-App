@@ -7,7 +7,7 @@ import { Category } from '../models/category';
 })
 export class CategoryService {
 
-  private CATEGORY_API_URL: string = '/assets/templates/category.json';
+  public CATEGORY_API_URL: string = '/assets/templates/category.json';
 
   constructor(private categoryReadOnlyHttp: HttpClient) { }
 

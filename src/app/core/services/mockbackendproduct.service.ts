@@ -9,48 +9,9 @@ import { Product } from '../models/product';
 export class MockBackendProduct {
 
   private PRODUCT_API_URL: string;
-  private ALL_PRODUCT_FILE: string;
 
   constructor(private productReadOnlyHttp: HttpClient) { 
     this.PRODUCT_API_URL = `/assets/templates/`;
-    this.ALL_PRODUCT_FILE = `products`;
-  }
-
-  // searchProduct(search: string): Observable<Product[]>{
-  //   let products: Product[] = [];
-  //   return new Observable((observer)=>{
-  //     this.productReadOnlyHttp.get<Product[]>(this.PRODUCT_API_URL+this.ALL_PRODUCT_FILE+".json").subscribe((items)=>{
-  //       items.forEach((item)=>{
-  //         if(item.classification==search){
-  //           products.push(item);
-  //         }else if(item.title==search){
-  //           products.push(item);
-  //         }else if(item.type==search){
-  //           products.push(item);
-  //         }
-  //       })
-  //       observer.next(products);      
-  //     })
-  //   });
-  // }
-
-  searchProduct(search: string): Promise<Product[]>{
-    let products: Product[] = [];
-    search = search.toLowerCase();
-    return new Promise((resolve, reject)=>{
-      this.productReadOnlyHttp.get<Product[]>(this.PRODUCT_API_URL+this.ALL_PRODUCT_FILE+".json").subscribe((items)=>{
-        items.forEach((item)=>{
-          if(item.classification?.toLowerCase().includes(search)){
-            products.push(item);
-          }else if(item.title?.toLowerCase().includes(search)){
-            products.push(item);
-          }else if(item.type?.toLowerCase().includes(search)){
-            products.push(item);
-          }
-        })
-        resolve(products)
-      })
-    });
   }
 
   getProducts(classification: string, type: string){

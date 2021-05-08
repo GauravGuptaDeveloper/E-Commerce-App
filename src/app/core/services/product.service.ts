@@ -2,21 +2,22 @@ import { Injectable } from '@angular/core';
 import { Observable, of } from 'rxjs';
 import { Product } from '../models/product';
 import { MockBackendProduct } from './mockbackendproduct.service';
+import { SearchService } from './search.service';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ProductService {
 
-  constructor(private mockBackendProduct: MockBackendProduct) {
+  constructor(private mockBackendProduct: MockBackendProduct, private searchService: SearchService) {
   }
 
   getSearchProducts(search: string): Promise<Product[]>{
-    return this.mockBackendProduct.searchProduct(search);
+    return this.searchService.searchProduct(search);
   }
 
   // getSearchProducts(search: string): Observable<Product[]>{
-  //   return this.mockBackendProduct.searchProduct(search);
+  //   return this.searchService.searchProduct(search);
   // }
 
   getProducts(classification: string, type: string): Observable<Product[]>{

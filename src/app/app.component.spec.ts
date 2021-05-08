@@ -14,6 +14,8 @@ import { LangModule } from './language/lang.module';
 import { LanguageComponent } from './shared/components/language/language.component';
 import { CategoryTreeComponent } from './shared/components/category-tree/category-tree.component';
 import { CategoryMenuItemComponent } from './shared/components/category-menu-item/category-menu-item.component';
+import { CartItemComponent } from './layout/components/cart-item/cart-item.component';
+import { FormsModule } from '@angular/forms';
 
 describe('AppComponent', () => {
 
@@ -24,7 +26,8 @@ describe('AppComponent', () => {
         HttpClientTestingModule,
         MaterialModule,
         SharedModule,
-        LangModule
+        LangModule,
+        FormsModule
       ],
       declarations: [
         CategoryTreeComponent,
@@ -32,6 +35,7 @@ describe('AppComponent', () => {
         LanguageComponent,
         SearchComponent,
         AppComponent,
+        CartItemComponent,
         FooterComponent,
         HeaderComponent,
         SpinnerComponent

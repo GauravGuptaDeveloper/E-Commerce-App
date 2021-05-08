@@ -1,11 +1,13 @@
 import { HttpClientTestingModule } from '@angular/common/http/testing';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { FormsModule } from '@angular/forms';
 import { RouterTestingModule } from '@angular/router/testing';
 import { CartService } from 'src/app/core/services/cart.service';
 import { CartMockService } from 'src/app/core/services/mock-testing-cart.service';
 import { LangModule } from 'src/app/language/lang.module';
 import { JumbotronComponent } from 'src/app/shared/components/jumbotron/jumbotron.component';
 import { LanguageComponent } from 'src/app/shared/components/language/language.component';
+import { CartItemComponent } from '../cart-item/cart-item.component';
 
 import { CartComponent } from './cart.component';
 
@@ -15,8 +17,8 @@ describe('CartComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ CartComponent, JumbotronComponent, LanguageComponent ],
-      imports: [RouterTestingModule, LangModule, HttpClientTestingModule],
+      declarations: [ CartComponent, JumbotronComponent, LanguageComponent, CartItemComponent ],
+      imports: [RouterTestingModule, LangModule, HttpClientTestingModule, FormsModule],
       providers: [{
         provide: CartService,
         useClass: CartMockService
