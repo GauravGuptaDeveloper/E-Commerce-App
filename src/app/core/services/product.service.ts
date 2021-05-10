@@ -16,10 +16,6 @@ export class ProductService {
     return this.searchService.searchProduct(search);
   }
 
-  // getSearchProducts(search: string): Observable<Product[]>{
-  //   return this.searchService.searchProduct(search);
-  // }
-
   getProducts(classification: string, type: string): Observable<Product[]>{
       return this.mockBackendProduct.getProducts(classification, type);      
   }

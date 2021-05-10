@@ -55,7 +55,6 @@ export class LoginComponent implements OnInit {
       }
       this.isSpinning = false;
     }, (err)=>{
-      console.log(err);
       this.isSpinning = false;
     });
   }

@@ -27,7 +27,6 @@ export class ProductsGridComponent implements OnInit {
     this.route.data.subscribe((data)=>{
       this.products = data.products;
     }, (err)=>{
-      console.log("Error");
     }) 
   }
 }

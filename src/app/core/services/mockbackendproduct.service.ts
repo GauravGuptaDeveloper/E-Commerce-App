@@ -29,7 +29,6 @@ export class MockBackendProduct {
         });
         resolve(product);
       }, (err)=>{
-        console.log("Error in Food Service at line 35", err);
         error(err);
       });
     })
@@ -46,7 +45,6 @@ export class MockBackendProduct {
         });
         resolve(products);
       }, (err)=>{
-        console.log("Error in Food Service at line 52", err);
         error(err);
       });
     })

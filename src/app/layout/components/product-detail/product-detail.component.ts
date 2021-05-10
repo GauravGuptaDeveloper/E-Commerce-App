@@ -42,6 +42,7 @@ export class ProductDetailComponent implements OnInit {
   addToCart(){
     let cart: Cart = {...this.product};
     this.cartService.addItemToCart(cart);
+    this.router.navigate(['cart']);
   }
 
 }

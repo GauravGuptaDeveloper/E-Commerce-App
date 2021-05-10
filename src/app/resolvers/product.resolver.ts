@@ -24,7 +24,6 @@ export class ProductResolver implements Resolve<Product[]> {
       return from(this.productService.getProductsOfThisType(route.params['classification'], route.queryParams['type']))
     }
     else if(route.queryParams['search']!=undefined){
-      // return this.productService.getSearchProducts(route.queryParams['search'])
       return from(this.productService.getSearchProducts(route.queryParams['search']));
     }
     else if(route.params['classification']!=undefined && route.params['type']==undefined){
