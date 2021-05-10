@@ -1,12 +1,13 @@
 <app-jumbotron></app-jumbotron>
 <div *ngIf="products.length!=0; else showNoProductsMessage">
     <mat-grid-list cols="5" rowHeight="415px" style="margin-top: 10px;">
-        <div *ngFor="let product of products">
-            <!-- <div *ngFor="let product of products | filter:searchText "> -->
+        <!-- <div *ngFor="let product of products"> -->
+        <div *ngFor="let product of products | filter:searchText ">
             <mat-grid-tile>
                 <app-product [product]="product"></app-product>
             </mat-grid-tile>
         </div>
+        <!-- </div> -->
     </mat-grid-list>
 </div>
 
