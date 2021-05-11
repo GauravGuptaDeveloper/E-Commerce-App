@@ -6,9 +6,9 @@ ng serve
 	
 In Memory database is used so if you refresh the page the cart will set to zero.
 
-Email Id
+### Email Id
 test@gmail.com
-Password
+### Password
 test1234
 
 ## Deployment Link
