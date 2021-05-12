@@ -12,7 +12,7 @@ test@gmail.com
 test1234
 
 ## Deployment Link
-https://609974828aded500d68233f7--relaxed-benz-022542.netlify.app
+https://609b63f870e9c572642a3269--nifty-stonebraker-af494b.netlify.app
 
 ## Bonus Question
 Both Bonus Question are attempted i.e Category tree and translation
